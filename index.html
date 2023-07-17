@@ -15,7 +15,7 @@
 
 		h1 {
 			font-size: 4em;
-
+			text-align: center;
 		}
 
 		h2 {
@@ -24,18 +24,16 @@
 
 		ul {
 			list-style-type: circle;
-
+			padding-left: 1em;
 		}
-
-		/* add bullet points to ul */
 
 		ul li {
 			margin-top: 1em;
-
 		}
 
 		.contact-info {
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: space-between;
 		}
 
@@ -43,39 +41,55 @@
 			color: black;
 		}
 
-		/* Added this class for date and location */
 		.info-block {
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: space-between;
 			align-items: flex-start;
 		}
 
 		.info-block div {
-			width: 45%;
+			width: 100%;
 		}
 
 		.info-block .date-location {
 			text-align: right;
+		}
+
+		@media only screen and (min-width: 768px) {
+			.info-block div {
+				width: 48%;
+			}
+
+			.container {
+				margin-left: 15%;
+				margin-right: 15%;
+			}
+		}
+
+		@media only screen and (max-width: 767px) {
+			.container {
+				margin-left: 1%;
+				margin-right: 1%;
+			}
 		}
 	</style>
 	<title>Erik Sandlöv - CV</title>
 </head>
 
 <body>
-	<div style="margin-left: 15%; margin-right: 15%;">
-		<div style="text-align:center;">
-			<h1>Erik Sandlöv</h1>
-			<div class="contact-info">
-				<div>
-					Hidden for web <br>
-					Stockholm 11557, Sweden <br>
-					<a href="tel:#">076 ### ## ##</a>
-				</div>
-				<div>
-					<a href="mailto:erik@sandlov.com">erik@sandlov.com</a> <br>
-					<a href="https://www.sandlov.com/">www.sandlov.com</a> <br>
-					<a href="https://www.linkedin.com/in/sandlov/">www.linkedin.com/in/sandlov</a>
-				</div>
+	<div class="container">
+		<h1>Erik Sandlöv</h1>
+		<div class="contact-info">
+			<div>
+				Hidden for web <br>
+				Stockholm 11557, Sweden <br>
+				<a href="tel:#">076 ### ## ##</a>
+			</div>
+			<div>
+				<a href="mailto:erik@sandlov.com">erik@sandlov.com</a> <br>
+				<a href="https://www.sandlov.com/">www.sandlov.com</a> <br>
+				<a href="https://www.linkedin.com/in/sandlov/">www.linkedin.com/in/sandlov</a>
 			</div>
 		</div>
 
@@ -210,7 +224,6 @@
 				<strong>Software:</strong> Git, Excel, Word, Powerpoint, Adobe Suite, CAD, LaTeX, Docker
 			</li>
 		</ul>
-
 	</div>
 </body>
 
