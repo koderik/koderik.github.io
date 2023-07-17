@@ -1,177 +1,217 @@
-<!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chivo+Mono+Medium&display=swap">
 	<link rel="icon" href="favicon.png" />
-	<title>ERIK SANDLÖV</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="Erik's personal website!!" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		body {
+			font-family: 'Chivo Mono Medium', Times, serif;
+			margin: 2em;
+		}
+
+		h1 {
+			font-size: 4em;
+
+		}
+
+		h2 {
+			border-bottom: 1px solid;
+		}
+
+		ul {
+			list-style-type: circle;
+
+		}
+
+		/* add bullet points to ul */
+
+		ul li {
+			margin-top: 1em;
+
+		}
+
+		.contact-info {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.contact-info a {
+			color: black;
+		}
+
+		/* Added this class for date and location */
+		.info-block {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+
+		.info-block div {
+			width: 45%;
+		}
+
+		.info-block .date-location {
+			text-align: right;
+		}
+	</style>
+	<title>Erik Sandlöv - CV</title>
 </head>
 
-<body class="is-preload">
-
-	<!-- Wrapper -->
-	<div id="wrapper">
-
-		<!-- Header -->
-		<header id="header" class="alt">
-			<a href="index.html" class="logo"><span>Erik</span> <strong>Sandlöv</strong></a>
-			<nav>
-				<a href="#menu">Menu</a>
-			</nav>
-		</header>
-
-		<!-- Menu -->
-		<nav id="menu">
-			<ul class="links">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="education.html">Education</a></li>
-				<li><a href="experience.html">Experience</a></li>
-				<li><a href="merits.html">Merits & Awards</a></li>
-				<li><a href="https://github.com/koderik?tab=repositories">Code & Projects</a></li>
-			</ul>
-			<ul class="actions stacked">
-				<li><a href="mailto:erik@sandlov.com" class="button primary fit">Contact Me</a></li>
-
-			</ul>
-		</nav>
-
-		<!-- Banner -->
-		<section id="banner" class="major">
-			<span class="image">
-				<img src="images/berg.jpeg" alt="" />
-			</span>
-			<div class="inner">
-				<header class="major">
-					<h1>Hi, I'm Erik!</h1>
-				</header>
-				<div class="content">
-					<p>My name is Erik Sandlöv and I study Industrial Engineering and Management at KTH in Stockholm.
-						Thank you for visiting my website!
-					</p>
-					<ul class="actions">
-						<li><a href="resume.pdf" download="resume.pdf" class="button">CV</a></li>
-					</ul>
-					<ul class="actions">
-						<li><a href="#one" class="button next scrolly">Learn More</a></li>
-					</ul>
-
+<body>
+	<div style="margin-left: 15%; margin-right: 15%;">
+		<div style="text-align:center;">
+			<h1>Erik Sandlöv</h1>
+			<div class="contact-info">
+				<div>
+					Hidden for web <br>
+					Stockholm 11557, Sweden <br>
+					<a href="tel:#">076 ### ## ##</a>
+				</div>
+				<div>
+					<a href="mailto:erik@sandlov.com">erik@sandlov.com</a> <br>
+					<a href="https://www.sandlov.com/">www.sandlov.com</a> <br>
+					<a href="https://www.linkedin.com/in/sandlov/">www.linkedin.com/in/sandlov</a>
 				</div>
 			</div>
-		</section>
-
-		<!-- Main -->
-		<div id="main">
-
-			<!-- One -->
-			<section id="one" class="tiles">
-				<article>
-					<span class="image">
-						<img src="images/uni.jpeg" loading="lazy" alt="" />
-					</span>
-					<header class="major">
-						<h3><a href="education.html" class="link">Education</a></h3>
-						<p>Where I went to school</p>
-					</header>
-				</article>
-				<article>
-					<span class="image">
-						<img src="images/extra.jpg" loading="lazy" alt="" />
-					</span>
-					<header class="major">
-						<h3><a href="experience.html" class="link">Experience</a></h3>
-						<p>What I've done beyond school</p>
-					</header>
-				</article>
-				<article>
-					<span class="image">
-						<img src="images/award.jpg" loading="lazy" alt="" />
-					</span>
-					<header class="major">
-						<h3><a href="merits.html" class="link">Merits & Awards</a></h3>
-						<p>What i got to show for</p>
-					</header>
-				</article>
-				<article>
-					<span class="image">
-						<img src="images/code.jpg" loading="lazy" alt="" />
-					</span>
-					<header class="major">
-						<h3><a href="https://github.com/koderik?tab=repositories" class="link">Code & Projects</a></h3>
-						<p>What I do in my pasttime </p>
-					</header>
-				</article>
-
-			</section>
-
-			<!-- Two -->
-
-			<!-- Contact -->
-			<section id="contact">
-				<div class="inner">
-					<section>
-						<header class="major">
-							<h2>For Recruiters</h2>
-						</header>
-						<p>I am looking for oppurtunites within my fields of interests and my education. Mainly, I am
-							interested in anything related to Business, Finance or Tech. As I am currently studying full
-							time, I would be most interested in Junior positions or Internships during the summer.</p>
-					</section>
-					<section class="split">
-						<section>
-							<div class="contact-method">
-								<span class="icon solid alt fa-envelope"></span>
-								<h3>Email</h3>
-								<a href="mailto:erik@sandlov.com">erik@sandlov.com</a>
-							</div>
-						</section>
-						<section>
-							<div class="contact-method">
-								<span class="icon solid alt fa-phone"></span>
-								<h3>Phone</h3>
-								<a href="tel:+46761676164">+46 76 167 61 64</a>
-							</div>
-						</section>
-					</section>
-			</section>
 		</div>
-		</section>
 
-		<!-- Footer -->
-		<footer id="footer">
-			<div class="inner">
-				<ul class="icons">
-					<li><a href="https://github.com/koderik" class="icon brands alt fa-github"><span
-								class="label">GitHub</span></a></li>
-					<li><a href="https://www.linkedin.com/in/erik-sandl%C3%B6v-81a7741a2/"
-							class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-				</ul>
+		<h2>Education</h2>
+		<ul>
+			<li class="info-block">
+				<div>
+					<strong>KTH Royal Institute of Technology</strong> <br>
+					Industrial Engineering and Management, specialization in Computer Science (4,5/5,0)
+				</div>
+				<div class="date-location">
+					2021 -- Present <br>
+					Stockholm, Sweden
+				</div>
+			</li>
+			<li class="info-block">
+				<div>
+					<strong>Nacka Gymnasium</strong> <br>
+					Teknikvetenskap, Programming 1,2 and Math Specialization (22,2/22,5)
+				</div>
+				<div class="date-location">
+					2018 -- 2021 <br>
+					Nacka, Sweden
+				</div>
+			</li>
+		</ul>
 
-			</div>
+		<!-- Work Experience -->
+		<h2>Work Experience</h2>
+		<ul>
+			<li class="info-block">
+				<div>
+					<strong>Ericsson Internship R&amp;D</strong> <br>
+					Ericsson Headquarters <br>
+					<ul>
+						<li>Contributed to the manufacturing and assembly of innovative prototypes and testbeds.</li>
+						<li>Assisted with material management, helped coordinate supply processes, and gained exposure
+							to industrial
+							production systems.</li>
+						<li>Acquired in-depth knowledge of telecommunications, SMA and hardware development.</li>
+					</ul>
+				</div>
+				<div class="date-location">
+					June, 2023 -- August, 2023 <br>
+					Kista, Sweden <br>
+				</div>
+			</li>
+			<li class="info-block">
+				<div>
+					<strong>Data Annotator</strong> <br>
+					Univrses AB <br>
+					<ul>
+						<li>Analyzed and annotated complex data sets for AI models, contributing to the accuracy and
+							reliability of
+							machine learning algorithms.</li>
+						<li>Improved self-management and teamwork, while enhancing guideline documentation.</li>
+					</ul>
+				</div>
+				<div class="date-location">
+					April, 2023 -- Present <br>
+					Stockholm, Sweden <br>
+				</div>
+			</li>
+			<li class="info-block">
+				<div>
+					<strong>Scania Internship Production</strong> <br>
+					Scania Transmission Manufacturing <br>
+					<ul>
+						<li>Performed maintenance and cleaning on industrial machinery, responsible for quality control
+							on finished
+							goods.</li>
+						<li>Wrote report that analyzed Scania’s digital transformation and ESG commitments.</li>
+						<li>Gained a deeper understanding of production systems and the Lean framework.</li>
+					</ul>
+				</div>
+				<div class="date-location">
+					June, 2022 -- August, 2022 <br>
+					Södertälje, Sweden <br>
+				</div>
+			</li>
+		</ul>
 
+		<!-- Other Experience -->
+		<h2>Other Experience</h2>
+		<ul>
+			<li>
+				<strong>Chapter Engagements:</strong> Nomination Committee, IT-Responsible, I-Case Advanced, Head
+				Mentor,
+				iSpexet, Quarnevalen 2023
+			</li>
+		</ul>
 
-		</footer>
+		<!-- Awards & Honors -->
+		<h2>Awards &amp; Honors</h2>
+		<ul>
+			<li class="info-block">
+				<div>
+					<strong>THS Kamratstipendium</strong> <br>
+					Tekniska Högskolans Studentkår (KTH)
+				</div>
+				<div class="date-location">
+					2022
+				</div>
+			</li>
+			<li class="info-block">
+				<div>
+					<strong>Principals Award</strong> <br>
+					Nacka Gymnasium
+				</div>
+				<div class="date-location">
+					2021
+				</div>
+			</li>
+			<li class="info-block">
+				<div>
+					<strong>Overall Winner of Hack Your World Hackathon</strong> <br>
+					Drivhuset, IBM, Ericsson
+				</div>
+				<div class="date-location">
+					2020
+				</div>
+			</li>
+		</ul>
+
+		<!-- Skills -->
+		<h2>Skills</h2>
+		<ul>
+			<li>
+				<strong>Programming Languages:</strong> Python, Java, Javascript, MATLAB
+			</li>
+			<li>
+				<strong>Software:</strong> Git, Excel, Word, Powerpoint, Adobe Suite, CAD, LaTeX, Docker
+			</li>
+		</ul>
 
 	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
 </body>
 
 </html>
