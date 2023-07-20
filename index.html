@@ -73,6 +73,29 @@
 				margin-right: 1%;
 			}
 		}
+		.container {
+			border-bottom:  1px solid;
+		}
+
+		.project-images {
+			display: flex;
+			box-sizing: border-box;
+
+		}
+
+		.project-image {
+			flex: 1;
+			overflow: hidden;
+			/* This is to make sure the image doesn't overflow the div if it's too tall */
+		}
+
+		.project-image img {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+			padding: 0.5em;
+			/* This scales the image as large as possible within its container, while maintaining its aspect-ratio */
+		}
 	</style>
 	<title>Erik Sandlöv - CV</title>
 </head>
@@ -225,6 +248,116 @@
 			</li>
 		</ul>
 	</div>
+	<br>
+	<div class="container">
+		<h1>Projects</h1>
+		<h2>SSSB Web Scraping</h2>
+		<ul>
+			<li class="info-block">
+				<div>
+					SSSB-Data is a project that displays scraped apartment queue data from SSSB.se, using Python,
+					Selenium,
+					and PostgreSQL.
+					It includes a GPA calculator and showcases skills in web development, web scraping, and database
+					management.
+					<br>
+					<br>
+					The service is hosted on Heroku and as I am using a free tier, might be unavailable at the time of
+					reading.
+					
+				</div>
+				<div class="date-location">
+					<a href="https://github.com/koderik/SSSB-Data">https://github.com/koderik/SSSB-Data</a>
+					<br>
+					<a href="https://sssb.tech/">https://sssb.tech/</a>
+					<br>
+				</div>
+
+			</li>
+			<br>
+			<div class="project-images">
+				<div class="project-image">
+					<img src="sssbsc1.jpg" alt="Screenshot 1">
+				</div>
+				<div class="project-image">
+					<img src="sssbsc2.jpg" alt="Screenshot 2">
+				</div>
+				<div class="project-image">
+					<img src="sssbsc3.jpg" alt="Screenshot 3">
+				</div>
+			</div>
+		</ul>
+		<h2>KTH Tentor Twitter Bot</h2>
+		<ul>
+			<li class="info-block">
+				<div>
+					KTH Exam Twitter Bot is a utility developed to facilitate regular updates on KTH exams by
+					automatically tweeting the
+					exam schedules on a daily basis. This project is built using Python, leveraging libraries such as
+					Pandas and Tweepy for
+					data manipulation and Twitter API interaction respectively. Notably, the bot efficiently scrapes and
+					reformats KTH's
+					exam calendar data, making it a valuable tool for students and educators seeking up-to-date exam
+					information.
+					<br>
+					<br>
+					As the Twitter API service is constantly changing since Elon Musk's aqusiition of the company, the
+					service might be unavailable at the time of reading.
+					
+				</div>
+				<div class="date-location">
+					<a href="https://github.com/koderik/KTH-Tentor">https://github.com/koderik/KTH-Tentor</a>
+					<br>
+					<a href="https://twitter.com/KTHTentor">https://twitter.com/KTHTentor</a>
+					<br>
+				</div>
+
+			</li>
+			<br>
+			<div class="project-images">
+				<div class="project-image">
+					<img src="twtsc1.jpg" alt="Screenshot 1">
+				</div>
+				<div class="project-image">
+					<img src="twtsc2.jpg" alt="Screenshot 2">
+				</div>
+				
+			</div>
+		</ul>
+		<h2>Contributions to the Chapter Website</h2>
+		<ul>
+			<li class="info-block">
+				<div>
+					Since forming and leading the IT group of the Chapter, I have been responsible for the continued development and maintenance of the Chapter website. The website is built using React and has a CMS by Strapi. I have made several contributions including over 20 commits, 50 issues and responsible for over 50 pull requests on the GitHub repository.
+		
+				</div>
+				<div class="date-location">
+					<a href="https://github.com/koderik/iare-se">https://github.com/koderik/iare-se</a>
+					<br>
+					<a href="https://iare.se">https://iare.se</a>
+					<br>
+				</div>
+		
+			</li>
+			<br>
+			<div class="project-images">
+				<div class="project-image">
+					<img src="iaresc1.jpg" alt="Screenshot 1">
+				</div>
+			
+		
+			</div>
+		</ul>
+
+
+	</div>
+	<footer>
+		<p>
+			For any inquiries, please contact me at <a href="mailto:erik@sandlov.com">erik@sandlov.com</a>
+			
+		</p>
+	</footer>
+
 </body>
 
 </html>
